@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="it" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no" />
+    <meta name="theme-color" content="#0a0a0b" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" href="icon-192.png" />
+    <title>Sterrato</title>
+    <!-- Splash di avvio: inline, dipinto subito prima del bundle JS. Rimosso da src/lib/splash.ts.
+         1) la strada di luce sale dal basso tra le colline  2) il logo appare con un riflesso  3) la scritta STERRATO -->
+    <style>html,body{background:#0a0a0b}#splash{z-index:2147483000;color:#f5efe9;contain:strict;will-change:opacity,transform;background:#0a0a0b;transition:opacity .4s,transform .4s cubic-bezier(.4,0,.2,1);position:fixed;inset:0;overflow:hidden}#splash.sp-out{opacity:0;pointer-events:none;transform:scale(1.03)}#splash .sp-bg{object-fit:cover;object-position:50% 100%;width:100%;height:100%;animation:1.25s cubic-bezier(.45,0,.2,1) 50ms forwards sp-reveal,1.8s cubic-bezier(.2,.8,.2,1) forwards sp-settle;position:absolute;inset:0;transform:scale(1.06);-webkit-mask-image:linear-gradient(#0000 38%,#000 62% 100%);mask-image:linear-gradient(#0000 38%,#000 62% 100%);-webkit-mask-position:0 0;mask-position:0 0;-webkit-mask-size:100% 260%;mask-size:100% 260%;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat}#splash .sp-glow{opacity:0;background:radial-gradient(closest-side,#ff7a1a38,#e2560a12 55%,#0a0a0b00 100%);border-radius:50%;width:560px;height:560px;margin:-280px 0 0 -280px;animation:.9s ease-out .35s forwards sp-in,3.2s ease-in-out 1.4s infinite sp-breathe;position:absolute;top:41%;left:50%}#splash .sp-stack{flex-direction:column;align-items:center;display:flex;position:absolute;top:41%;left:0;right:0;transform:translateY(-62%)}#splash .sp-logo{aspect-ratio:480/316;opacity:0;width:168px;animation:.8s cubic-bezier(.2,.9,.25,1.12) .45s forwards sp-logo;position:relative;transform:translateY(14px)scale(.84)}#splash .sp-logo img{width:100%;height:100%;display:block}#splash .sp-shine{background:linear-gradient(105deg,#0000 35%,#ffffffbf 50%,#0000 65%) 100% 0/300% 100% no-repeat;animation:.9s cubic-bezier(.5,0,.3,1) 1.05s forwards sp-shine;position:absolute;inset:0;-webkit-mask:url(splash/logo.png) 50%/contain no-repeat;mask:url(splash/logo.png) 50%/contain no-repeat}#splash .sp-word{letter-spacing:.34em;text-indent:.34em;text-transform:uppercase;background:linear-gradient(#fff 0%,#f1e6dc 100%);color:#0000;opacity:0;-webkit-background-clip:text;background-clip:text;margin-top:26px;font:700 75% 36px/1 Barlow Condensed,Roboto Condensed,Arial Narrow,Helvetica Neue,system-ui,sans-serif;animation:.7s cubic-bezier(.2,.8,.2,1) .85s forwards sp-word;transform:translateY(10px)scaleX(1.18)}#splash .sp-tag{letter-spacing:.28em;text-indent:.28em;text-transform:uppercase;color:#f5efe980;opacity:0;margin-top:10px;font:500 11px/1.2 Barlow Condensed,Roboto Condensed,Arial Narrow,system-ui,sans-serif;animation:.5s 1.15s forwards sp-in}#splash .sp-bar{opacity:0;background:#ffffff1a;border-radius:2px;width:44px;height:2px;margin-left:-22px;animation:.4s 1.6s forwards sp-in;position:absolute;top:calc(41% + 150px);left:50%;overflow:hidden}#splash .sp-bar:after{content:"";background:linear-gradient(90deg,#ff9a4a,#e2560a);border-radius:2px;width:40%;animation:1.1s cubic-bezier(.6,0,.4,1) 1.6s infinite sp-run;position:absolute;inset:0;transform:translate(-100%)}@keyframes sp-reveal{to{-webkit-mask-position:0 100%;mask-position:0 100%}}@keyframes sp-settle{to{transform:none}}@keyframes sp-breathe{0%,to{transform:scale(1)}50%{transform:scale(1.08)}}@keyframes sp-logo{to{opacity:1;transform:none}}@keyframes sp-shine{to{background-position:0 0}}@keyframes sp-in{to{opacity:1}}@keyframes sp-word{to{opacity:1;transform:none}}@keyframes sp-run{to{transform:translate(250%)}}@media (prefers-reduced-motion:reduce){#splash,#splash *,#splash :after{transition-duration:10ms!important;animation:none!important}#splash .sp-bg{transform:none;-webkit-mask:none;mask:none}#splash .sp-glow,#splash .sp-logo,#splash .sp-word,#splash .sp-tag{opacity:1;filter:none;transform:none}#splash .sp-shine,#splash .sp-bar{display:none}#splash.sp-out{transform:none}}</style>
+    <script type="module" crossorigin src="/sterrato/assets/index-D4ECRkOQ.js"></script>
+    <link rel="modulepreload" crossorigin href="/sterrato/assets/rolldown-runtime-XKyaHtl9.js">
+    <link rel="modulepreload" crossorigin href="/sterrato/assets/react-BNCMh3YF.js">
+    <link rel="modulepreload" crossorigin href="/sterrato/assets/motion-CeZxyQgi.js">
+    <link rel="modulepreload" crossorigin href="/sterrato/assets/dist-CbiDYceI.js">
+    <link rel="modulepreload" crossorigin href="/sterrato/assets/dist-BI3NbMRG.js">
+    <link rel="modulepreload" crossorigin href="/sterrato/assets/circle-check-DDQ1OYch.js">
+    <link rel="modulepreload" crossorigin href="/sterrato/assets/perf-Cjfc-Bgn.js">
+    <link rel="modulepreload" crossorigin href="/sterrato/assets/loader-circle-CG_tXDez.js">
+    <link rel="modulepreload" crossorigin href="/sterrato/assets/dist-Df2lF_67.js">
+    <link rel="modulepreload" crossorigin href="/sterrato/assets/nav-CioVPmy_.js">
+    <link rel="modulepreload" crossorigin href="/sterrato/assets/dexie-B0OWpZSH.js">
+    <link rel="modulepreload" crossorigin href="/sterrato/assets/db-D-NTdAKz.js">
+    <link rel="modulepreload" crossorigin href="/sterrato/assets/geo-oUKf_EUc.js">
+    <link rel="modulepreload" crossorigin href="/sterrato/assets/location-C7AFJX_0.js">
+    <link rel="modulepreload" crossorigin href="/sterrato/assets/preload-helper-Bc8H7-yM.js">
+    <link rel="modulepreload" crossorigin href="/sterrato/assets/supabase-Dg3zCikB.js">
+    <link rel="modulepreload" crossorigin href="/sterrato/assets/cloud-D1QxB9_I.js">
+    <link rel="modulepreload" crossorigin href="/sterrato/assets/push-BCKoDQAd.js">
+    <link rel="modulepreload" crossorigin href="/sterrato/assets/nearby-Br2cIcMX.js">
+    <link rel="modulepreload" crossorigin href="/sterrato/assets/garage-CkVdUTxg.js">
+    <link rel="modulepreload" crossorigin href="/sterrato/assets/maintAlerts-CcsYuwP4.js">
+    <link rel="modulepreload" crossorigin href="/sterrato/assets/garageReminders-Dpxzd8Ha.js">
+    <link rel="modulepreload" crossorigin href="/sterrato/assets/ptt-CZnZChgB.js">
+    <link rel="modulepreload" crossorigin href="/sterrato/assets/conversion-D3YUz-xz.js">
+    <link rel="modulepreload" crossorigin href="/sterrato/assets/ble-BLLWyV5v.js">
+    <link rel="modulepreload" crossorigin href="/sterrato/assets/rotate-ccw-clock-D0WSSiBF.js">
+    <link rel="modulepreload" crossorigin href="/sterrato/assets/quadTypes-ByRhcplD.js">
+    <link rel="modulepreload" crossorigin href="/sterrato/assets/x-7jdrbh_l.js">
+    <link rel="modulepreload" crossorigin href="/sterrato/assets/definitions-BdWVgBTV.js">
+    <link rel="modulepreload" crossorigin href="/sterrato/assets/haptics-D12tSA57.js">
+    <link rel="modulepreload" crossorigin href="/sterrato/assets/dialog-t9y0G-5O.js">
+    <link rel="modulepreload" crossorigin href="/sterrato/assets/switch-BMs5CzM2.js">
+    <link rel="modulepreload" crossorigin href="/sterrato/assets/droplets-Bd3-H2Sm.js">
+    <link rel="modulepreload" crossorigin href="/sterrato/assets/glass-bubble-BxUTNgbF.js">
+    <link rel="modulepreload" crossorigin href="/sterrato/assets/map-pin-Bo1y9TiY.js">
+    <link rel="modulepreload" crossorigin href="/sterrato/assets/rotate-ccw-DpM0V-yQ.js">
+    <link rel="modulepreload" crossorigin href="/sterrato/assets/waves-horizontal-BExuTBP8.js">
+    <link rel="modulepreload" crossorigin href="/sterrato/assets/zap-m7gDrCsL.js">
+    <link rel="modulepreload" crossorigin href="/sterrato/assets/rideSummaries-jHf8njDN.js">
+    <link rel="modulepreload" crossorigin href="/sterrato/assets/RideIssuesSheet-BXuh3187.js">
+    <link rel="modulepreload" crossorigin href="/sterrato/assets/maplibre-D1wV6Qzb.js">
+    <link rel="modulepreload" crossorigin href="/sterrato/assets/offlineMap-6sGxHR5T.js">
+    <link rel="modulepreload" crossorigin href="/sterrato/assets/routing-BvzV7woC.js">
+    <link rel="modulepreload" crossorigin href="/sterrato/assets/destination-D_ZQDnfY.js">
+    <link rel="modulepreload" crossorigin href="/sterrato/assets/sheet-grip-DO1H6GDo.js">
+    <link rel="modulepreload" crossorigin href="/sterrato/assets/primitives-CiINz7-I.js">
+    <link rel="modulepreload" crossorigin href="/sterrato/assets/pause-BIM0LlKW.js">
+    <link rel="modulepreload" crossorigin href="/sterrato/assets/play-DYpb_Jo8.js">
+    <link rel="modulepreload" crossorigin href="/sterrato/assets/mountain-DDhp-op9.js">
+    <link rel="modulepreload" crossorigin href="/sterrato/assets/gauge-C50jdJOC.js">
+    <link rel="modulepreload" crossorigin href="/sterrato/assets/route-ZlxuEvu4.js">
+    <link rel="modulepreload" crossorigin href="/sterrato/assets/users-C11Z8y3T.js">
+    <link rel="modulepreload" crossorigin href="/sterrato/assets/avatars-BRCfoy0K.js">
+    <link rel="modulepreload" crossorigin href="/sterrato/assets/flag-CUZhc40D.js">
+    <link rel="modulepreload" crossorigin href="/sterrato/assets/gpx-Kr3ar4sj.js">
+    <link rel="modulepreload" crossorigin href="/sterrato/assets/RouteThumb-zE-bhjX0.js">
+    <link rel="modulepreload" crossorigin href="/sterrato/assets/homeReturn-C_LsUDTH.js">
+    <link rel="modulepreload" crossorigin href="/sterrato/assets/network-OtDmVX5y.js">
+    <link rel="modulepreload" crossorigin href="/sterrato/assets/families-DKpKdNcn.js">
+    <link rel="modulepreload" crossorigin href="/sterrato/assets/refresh-cw-C207P_eZ.js">
+    <link rel="modulepreload" crossorigin href="/sterrato/assets/map-31W6s7iq.js">
+    <link rel="modulepreload" crossorigin href="/sterrato/assets/mic-ItZS-zaU.js">
+    <link rel="modulepreload" crossorigin href="/sterrato/assets/QuadMode-Air6921x.js">
+    <link rel="stylesheet" crossorigin href="/sterrato/assets/index-f5m2MSyu.css">
+  <link rel="manifest" href="/sterrato/manifest.webmanifest"></head>
+  <body>
+    <div id="root"></div>
+    <script>
+      // ricaricata da un aggiornamento (l'app era in background): niente secondo splash
+      try { if (sessionStorage.getItem('sterrato.swReload')) { sessionStorage.removeItem('sterrato.swReload'); document.documentElement.setAttribute('data-sw-reload', '') } } catch (e) {}
+    </script>
+    <style>[data-sw-reload] #splash{display:none}</style>
+    <div id="splash" role="status" aria-label="Caricamento di Sterrato">
+      <img class="sp-bg" src="splash/bg.webp" alt="" decoding="async" fetchpriority="high" />
+      <div class="sp-glow"></div>
+      <div class="sp-stack">
+        <div class="sp-logo"><img src="splash/logo.png" alt="" decoding="async" fetchpriority="high" /><div class="sp-shine"></div></div>
+        <div class="sp-word">Sterrato</div>
+        <div class="sp-tag">Traccia ogni sterrato</div>
+      </div>
+      <div class="sp-bar"></div>
+    </div>
+    <script>
+      // Rete di sicurezza: se l'app non chiama hideSplash() entro 6 s (o il bundle fallisce), il splash sparisce comunque.
+      // ?splash=hold lo tiene visibile (solo per sviluppo/design).
+      if (!/[?&]splash=hold\b/.test(location.search)) setTimeout(function () {
+        var s = document.getElementById('splash'); if (!s) return;
+        s.classList.add('sp-out'); setTimeout(function () { s.remove() }, 400)
+      }, 6000)
+    </script>
+  </body>
+</html>

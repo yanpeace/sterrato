@@ -1,0 +1,17 @@
+scontorno-isnet640-w8-v1.onnx
+=============================
+
+Modello di segmentazione usato per scontornare la foto del mezzo (effetto "foto da studio").
+Gira tutto sul telefono: la foto non viene mandata a nessuno.
+
+- Modello: IS-Net "isnet-general-use" (DIS - Highly Accurate Dichotomous Image Segmentation,
+  Xuebin Qin e altri, ECCV 2022). Codice e pesi: https://github.com/xuebinqin/DIS
+  Licenza: Apache License 2.0 (https://www.apache.org/licenses/LICENSE-2.0)
+- Conversione ONNX: progetto rembg (https://github.com/danielgatis/rembg, licenza MIT),
+  file isnet-general-use.onnx della release v0.0.0.
+- Modifica fatta da Sterrato: pesi delle convoluzioni salvati in int8 per canale
+  (DequantizeLinear prima di ogni Conv, calcolo sempre in float32) per ridurre il file
+  da 179 MB a 47 MB; misure fisse dei Resize scalate per un ingresso 640x640 invece di 1024x1024
+  (circa 2,5 volte più veloce sul telefono, scontorno quasi uguale).
+
+Motore: onnxruntime-web (Microsoft, licenza MIT), file .wasm servito dal sito.
